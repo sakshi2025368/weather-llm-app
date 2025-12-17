@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui;
+  height: 100vh;
+  overflow: hidden; /* ❗ no scroll */
+}
+
+.app {
+  height: 100vh;
+  padding: 20px 36px;
+  background: #e8edff;
+}
+
+.dark {
+  background: linear-gradient(135deg, #0f172a, #1e1b4b);
+  color: white;
+}
+
+/* HEADER */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  gap: 8px;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.search-box button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+}
+
+.mode {
+  background: transparent;
+  font-size: 18px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 18px;
+}
+
+/* MAIN WEATHER */
+.main-card h2 {
+  margin-bottom: 6px;
+}
+
+.main-card .temp {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.main-card p {
+  margin: 6px 0;
+}
+
+/* STATS */
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+/* RIGHT CARD */
+.side-card p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* CHART */
+.chart {
+  margin-top: 16px;
+  padding: 16px;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 140px; /* reduced */
+}
+
+.bar-wrap {
+  text-align: center;
+  font-size: 11px;
+}
+
+.bar {
+  width: 18px;
+  background: #6366f1;
+  border-radius: 6px;
+}
+
+/* FORECAST */
+.forecast {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  padding: 10px;
+  min-width: 100px;
+  text-align: center;
+  font-size: 13px;
+}
